@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="upload"><button>upload file</button></a>
+    {%for i in upload%}
+    <p>{{i.Title}}</p>
+    <p>here is link</p>
+    <a href="{{i.File.url}}" download>download</a>
+    <a href="{{i.File.url}}">access</a>
+    {%endfor%}
+  </body>
+</html>
