@@ -8,9 +8,10 @@ from django.contrib.auth.decorators import login_required
 import os
 from django.conf import settings
 from django.http import HttpResponse, Http404
+from datetime import date
 # Create your views here.
 def index(request):
-    return render(request,'index.html')
+    return render(request,'home.html')
 
 def register(request):
 	if request.method=='POST':
@@ -56,6 +57,7 @@ def upload(request):
         upload=file()
         upload.User=request.user
         upload.Title=request.POST['title']
+        upload.Date=date.today()
         upload.File=request.FILES.get('file',False)
         upload.save()
         return redirect('/drive')
@@ -68,3 +70,5 @@ def download(request,file_url):
             response['Content-Disposition'] = 'inline; filename=' + os.path.basename(file_path)
             return response
     raise Http404
+def table(request):
+    return render(request,'table.html')

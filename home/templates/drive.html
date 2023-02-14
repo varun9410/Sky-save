@@ -1,18 +1,48 @@
+{%load static%}
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <a href="upload"><button>upload file</button></a>
-    {%for i in upload%}
-    <p>{{i.Title}}</p>
-    <p>here is link</p>
-    <a href="{{i.File.url}}" download>download</a>
-    <a href="{{i.File.url}}">access</a>
-    {%endfor%}
-  </body>
-</html>
+
+<html>
+
+<head>
+
+ <title>Table layout</title>
+
+ <link rel="stylesheet" href="{%static 'drive.css' %}">
+ <link rel="stylesheet" href="{%static 'style.css'%}">
+<line rel="stylesheet" href="{%static 'footer.css'%}">
+</head>
+<body style="background-color: black; display: inline;">
+  <div style="color:black;" >{%include 'navbar.html' %}</div>
+ <table style="margin-top: 30px;" >
+
+ <tr>
+
+ <th>#</th>
+
+ <th>Name</th>
+
+ <th>date</th>
+
+ <th>access</th>
+
+ <th>download</th>
+
+ <th>delete</th>
+
+ </tr>
+ {% for i in upload %}
+  <tr>
+ <td>{{i.File_id}}</td>
+ <td>{{i.Title}}</td>
+ <td>{{i.Date}}</td>
+ <td> <a href="{{i.File.url}}">view</a></td>
+ <td><a href="{{i.File.url}}" download>download</a></td>
+ <td></td>
+ </tr>
+ {% endfor %}
+
+
+ </table>
+ <div style="margin: 600px;">{%include 'footer.html'%}</div>
+
+ </body>

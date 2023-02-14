@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "/home/vboxuser/Sky-save/manage.py", line 11, in main
+    from django.core.management import execute_from_command_line
+ModuleNotFoundError: No module named 'django'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/vboxuser/Sky-save/manage.py", line 22, in <module>
+    main()
+  File "/home/vboxuser/Sky-save/manage.py", line 13, in main
+    raise ImportError(
+ImportError: Couldn't import Django. Are you sure it's installed and available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?
+Watching for file changes with StatReloader
+[13/Feb/2023 09:14:54] "GET / HTTP/1.1" 200 1203
+Not Found: /img/meesho-logo.png
+[13/Feb/2023 09:14:54] "GET /img/meesho-logo.png HTTP/1.1" 404 3451
+Not Found: /img/mobile/menu.png
+[13/Feb/2023 09:14:54] "GET /img/mobile/menu.png HTTP/1.1" 404 3451
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 13, 2023 - 09:14:36
+Django version 4.1.6, using settings 'api.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.

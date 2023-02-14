@@ -1,0 +1,13 @@
+Watching for file changes with StatReloader
+[13/Feb/2023 09:16:06] "GET /register HTTP/1.1" 200 1423
+[13/Feb/2023 09:18:23] "GET / HTTP/1.1" 200 1203
+Not Found: /img/mobile/menu.png
+[13/Feb/2023 09:18:23] "GET /img/mobile/menu.png HTTP/1.1" 404 3451
+Not Found: /img/meesho-logo.png
+[13/Feb/2023 09:18:23] "GET /img/meesho-logo.png HTTP/1.1" 404 3451
+[13/Feb/2023 09:18:57] "GET /login HTTP/1.1" 200 611
+[13/Feb/2023 16:32:50] "GET / HTTP/1.1" 200 1203
+Not Found: /img/mobile/menu.png
+[13/Feb/2023 16:32:50] "GET /img/mobile/menu.png HTTP/1.1" 404 3451
+Not Found: /img/meesho-logo.png
+[13/Feb/2023 16:32:50] "GET /img/meesho-logo.png HTTP/1.1" 404 3451

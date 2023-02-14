@@ -7,5 +7,6 @@ urlpatterns = [
     path('drive',views.drive,name='drive'),
     path('logout',views.logout,name='logout'),
     path('upload',views.upload,name='upload'),
+    path('table',views.table,name='table'),
     path('download/<str:file_url>',views.download,name='download')
 ]

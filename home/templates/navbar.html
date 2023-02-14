@@ -1,0 +1,22 @@
+<header>
+    <nav>
+       <div class="menu-icon">
+          <i class="fa fa-bars fa-2x"></i>
+       </div>
+       <div class="logo">
+          SKY DRIVE
+       </div>
+       <div class="menu">
+          <ul>
+             <li><a href="/">Home</a></li>
+             <li><a href="drive">Drive</a></li>
+             <li><a href="upload">UploadFile</a></li>
+             {%if user.is_authenticated %}
+             <a href="logout" ><button style="font-size: 20px;">LOGOUT</button></a>
+             {%else%}
+             <a href="register" ><button style="font-size: 20px;">Register</button></a>
+             <a href="login" ><button style="font-size: 20px;">Log In</button></a>
+             {%endif%}
+          </ul>
+       </div>
+    </nav></header>

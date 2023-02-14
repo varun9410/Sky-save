@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>SKY SAVE</title>
+      <link rel="stylesheet" href="{%static 'style.css'%}">
+   
+<!------ Include the above in your HEAD tag ---------->
+
+   </head>
+   <body class="background">
+      <div>
+         {%include 'navbar.html'%}
+      </div>
+            <h1 style="text-align: center; padding-top: 200px;">Welcome To Our Cloud Storage Website</h1>
+         <button style="height: 50px; width: 200px; margin-left: 500px; background-color: black; border-style: none; font-size: 20px;" ><a href="/register" style="color:white; text-decoration: none;" >Register</a></button>
+        <p style="text-align: center; ">This website provide cloud based file storage service so that user can access </br>
+            file from any. We also work on api so that user can programmatically store,</br>
+            access and update the file
+        </p>
+         <div style="margin-top: 400px;">{%include 'footer.html'%}</div>
+   </body>
+
+</html>
