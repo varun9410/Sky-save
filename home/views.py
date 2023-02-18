@@ -72,3 +72,6 @@ def download(request,file_url):
     raise Http404
 def table(request):
     return render(request,'table.html')
+def delete(request,id):
+     file.objects.filter(File_id=id).delete()
+     return redirect('/drive')
